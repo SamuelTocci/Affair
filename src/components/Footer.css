@@ -1,0 +1,18 @@
+.footer-container{
+    padding-left: 180px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    text-align: left;
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: hotpink;
+}

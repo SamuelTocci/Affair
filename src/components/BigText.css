@@ -3,3 +3,8 @@
     font-size: xxx-large;
     padding-left: 180px;
 }
+
+::selection{
+    color: white;
+    background-color: black;
+}
