@@ -1,4 +1,4 @@
-import logo from './media/logo_affair(temp).svg';
+import logo from './res/logo_affair(temp).svg';
 import './App.css';
 import NavBar from "./components/NavBar";
 import Main from "./components/Main";

@@ -5,9 +5,7 @@ import BigText from "../components/BigText";
 
 const Home = () => {
     return (
-        <body>
-            <BigText/>
-        </body>
+    <BigText/>
     );
 }
 

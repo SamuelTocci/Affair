@@ -1,5 +1,5 @@
 import react from "react"
-import TextPictureStyle from './BigText.css'
+import BigTextStyle from './BigText.css'
 
 const BigText = () => {
     return (
