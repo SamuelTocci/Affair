@@ -6,6 +6,7 @@ class NavBar extends React.Component{
         return(
             <>
             <div className="sidenav">
+                <div className={"Name"}> Affair </div>
                 <a href={"/"}>
                     <img src='../res/logo_affair(temp).svg' alt="logo" width={4000}/>
                 </a>
