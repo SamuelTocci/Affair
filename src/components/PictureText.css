@@ -1,11 +1,12 @@
 .Category{
-    font-weight: lighter;
     font-size: 1.6em;
     padding-bottom: 0.2em;
+    color: lightgrey;
+    font-weight: bold;
 }
 
 .Title{
-    font-weight: Bolder;
+    font-weight: Bold;
     font-size: 3em;
     padding-bottom: 0.3em;
     max-width: 600px;

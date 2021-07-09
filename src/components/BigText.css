@@ -1,7 +1,8 @@
 .intro {
-    font-weight: bold;
-    font-size: 3em;
-    padding-left: 320px;
+    font-weight: bolder;
+    font-size: 4.5em;
+    text-align: left;
+    max-width: 900px;
 }
 
 ::selection{

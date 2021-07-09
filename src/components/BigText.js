@@ -5,9 +5,7 @@ const BigText = () => {
     return (
         <div className={"intro"}>
             <p>
-                Kwalitatieve <br/>
-                elektronische muziekevenementen <br/>
-                in een prikkelende omgeving.
+                Kwalitatieve elektronische muziekevenementen in een prikkelende omgeving.
             </p>
         </div>
     );

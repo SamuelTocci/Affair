@@ -1,3 +1,10 @@
 .wrapper{
     padding-left: 320px;
+    height: 100%;
+    flex: 1 0 auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
 }

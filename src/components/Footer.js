@@ -3,7 +3,7 @@ import FooterStyle from "./Footer.css"
 
 function Footer(){
     return(
-        <div className={'footer-container'}>
+        <footer className={'footer-container'}>
             <section className={"footer-socials"}>
                 <p className={"footer-socials-heading"}>
                     Keep an eye on our socials for the latest info.
@@ -14,7 +14,7 @@ function Footer(){
                     <a href={"#"}>Facebook</a>
                 </p>
             </section>
-        </div>
+        </footer>
     );
 }
 

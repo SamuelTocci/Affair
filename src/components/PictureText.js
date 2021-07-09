@@ -8,7 +8,7 @@ const PictureText = (props) => {
             {props.category}
         </div>
         <div className={"Title"}>
-            <p className={"Img"}><img src={props.img}/></p>
+            <p className={"Img"}><img src={props.img} width={600}/></p>
             <p>{props.title}</p>
         </div>
         <div className={"Text"}>
