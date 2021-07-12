@@ -2,6 +2,7 @@
     padding-left: 320px;
     height: 100%;
     flex: 1 0 auto;
+    background: url("../res/GradientBackground.svg");
 }
 
 body{
