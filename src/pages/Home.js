@@ -5,6 +5,7 @@ import BigText from "../components/BigText";
 import PictureText from "../components/PictureText";
 import HomeStyle from "./Home.css"
 import musicPicture from "../res/clubPicture1.PNG"
+import fingerprints from "../res/fingerprints.svg"
 
 const Home = () => {
     return (
@@ -14,7 +15,7 @@ const Home = () => {
         <PictureText  category={"Music"} title={"Internationale, nationale en lokale artiesten samen op één line-up"} text={"Op vlak van muziek, staan we voor kwaliteitsvolle elektronische muziek. We zien internationale,\n" +
         "nationale en lokale artiesten samen op een line-up staan, om zo lokaal te talent te steunen, maar\n" +
         "ook de kwaliteit van ons evenement te garanderen. Binnen de alternatieve elektronische muziek\n" +
-        "scene focussen we vooral op house, techno en alles ertussen."} img={musicPicture}/>
+        "scene focussen we vooral op house, techno en alles ertussen."} img={fingerprints}/>
         <PictureText  category={"Music"} title={"Internationale, nationale en lokale artiesten samen op één line-up"} text={"Op vlak van muziek, staan we voor kwaliteitsvolle elektronische muziek. We zien internationale,\n" +
         "nationale en lokale artiesten samen op een line-up staan, om zo lokaal te talent te steunen, maar\n" +
         "ook de kwaliteit van ons evenement te garanderen. Binnen de alternatieve elektronische muziek\n" +

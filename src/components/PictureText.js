@@ -15,7 +15,7 @@ const PictureText = (props) => {
                 <p>{props.text}</p>
             </div>
             </div>
-            <div className={"Img"}><img src={props.img} width={600}/></div>
+            <div className={"Img"}><img src={props.img} width={600} height={440}/></div>
         </div>
     );
 }

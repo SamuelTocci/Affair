@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef, useLayoutEffect} from 'react';
 import SideMenuStyle from './NavBar.css'
-import logo from '../res/logo_affair(temp).svg';
+import logo from '../res/watermerk.svg';
 
 class NavBar extends React.Component{
     render(){
@@ -9,7 +9,7 @@ class NavBar extends React.Component{
             <div className="sidenav">
                 <div className={"logo-wrapper"}>
                     <a href={"/"}>
-                        <img src={logo} alt="logo"/>
+                        <img src={logo} alt="logo" width={160}/>
                     </a>
                 </div>
                 <a href="./tickets">Tickets</a>
