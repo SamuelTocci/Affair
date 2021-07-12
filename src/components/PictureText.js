@@ -1,15 +1,15 @@
 import react from 'react'
-import PictureTextStyle from "./PictureText.css"
+import PictureTextInverseStyle from "./PictureText.css"
 
 const PictureText = (props) => {
     return (
         <div className={"container"}>
+            <div>
             <div className={"Category"}>
                 {props.category}
             </div>
-            <div>
             <div className={"Title"}>
-                <p>{props.title}</p>
+                {props.title}
             </div>
             <div className={"Text"}>
                 <p>{props.text}</p>
