@@ -16,7 +16,7 @@ class NavBar extends React.Component{
                 <a href="./about">About</a>
                 <a href="./contact">Contact</a>
                 <div className={"bottomNav"}>
-                    <a href="#" onClick="window.open('MyPDF.pdf', '_blank', 'fullscreen=yes'); return false;">Concept Nota</a>
+                    <a href="#" onClick="window.open('../res/Conceptnota.pdf', '_blank', 'fullscreen=yes'); return false;">Concept Nota</a>
                 </div>
             </div>
             </>
