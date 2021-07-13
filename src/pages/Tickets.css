@@ -1,0 +1,78 @@
+#ticketwrapper{
+    margin-left: 240px;
+    margin-right: 0;
+    height: 100%;
+    flex: 1 0 auto;
+    background: url("../res/GradientBackground.svg");
+    padding-top: 1em;
+    padding-bottom: 8.8em;
+}
+
+#main{
+    display:block;
+    width: 100%;
+    max-width: 600px;
+    height: 700px;
+    background: white;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+}
+
+#firstWave{
+    display: block;
+    width: 80%;
+    height: 10%;
+    background: #E2E8EB;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+    border-radius: 16px;
+}
+#secondWave{
+    display: block;
+    width: 80%;
+    height: 10%;
+    background: #E2E8EB;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+}
+#thirdWave{
+    display: block;
+    width: 80%;
+    height: 10%;
+    background: #E2E8EB;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+}
+
+.ticketTitle{
+    margin-left: 4%;
+    padding-top: 2%;
+}
+
+.ticketPrice{
+    margin-left: 4%;
+    margin-top: -2%;
+    font-weight: lighter;
+}
+
+#checkoutProgress{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 5%;
+    width: 80%;
+}
+
+#continuePayment{
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+
