@@ -21,12 +21,11 @@ function useWaveAmount () {
 }
 
 function continuePayment() {
+
     window.open('https://weer.sluispark.be/?p=mnu_webcam')
 }
 
 const Tickets = () => {
-
-
     return (
         <div id={"ticketwrapper"}>
             <div id={"main"}>
@@ -36,7 +35,7 @@ const Tickets = () => {
                 <Wave title={"Late night affair: wave 3"} price={8}/>
                 <div id={"ticketTotal"}>
                     <img src={ContinuePayment} id={"continuePayment"} onClick={continuePayment}/>
-                    <TicketTotal total={0}/>
+                    <TicketTotal total={useWaveAmount()}/>
                 </div>
             </div>
         </div>
