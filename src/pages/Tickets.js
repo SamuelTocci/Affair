@@ -1,40 +1,43 @@
-import react from 'react'
+import react, {useEffect, useState} from 'react'
 import {Route, Switch} from "react-router-dom";
 import TicketsStyle from "./Tickets.css"
 import CheckoutProgress from "../res/checkoutProgress.svg"
 import ContinuePayment from "../res/ContinuePayment.svg"
+import Home from "./Home";
+import React from "react";
+import Wave from "../components/Wave";
+import TicketTotal from "../components/TicketTotal"
 
-function draw() {
-    const canvas = document.getElementById('canvas');
-    if (canvas.getContext) {
-        const context = canvas.getContext('2d');
+function useWaveAmount () {
+    const [total, setTotal] = useState(0);
 
-        context.fillRect(20,20,100,100);
-        context.clearRect(40,40,60,60);
-        context.strokeRect(45,45,50,50);
-    }
+    useEffect(() => {
+        function handleAmountChange(){
+            setTotal()
+        }
+    });
+
+    return total;
 }
 
-
+function continuePayment() {
+    window.open('https://weer.sluispark.be/?p=mnu_webcam')
+}
 
 const Tickets = () => {
+
+
     return (
         <div id={"ticketwrapper"}>
             <div id={"main"}>
                 <img src={CheckoutProgress} id={"checkoutProgress"}/>
-                <div id={"firstWave"}>
-                    <p className={"ticketTitle"}>Early birds: wave 1</p>
-                    <p className={"ticketPrice"}>€ 6</p>
+                <Wave title={"Early birds: wave 1"} price={6}/>
+                <Wave title={"Regular release: wave 2"} price={7}/>
+                <Wave title={"Late night affair: wave 3"} price={8}/>
+                <div id={"ticketTotal"}>
+                    <img src={ContinuePayment} id={"continuePayment"} onClick={continuePayment}/>
+                    <TicketTotal total={0}/>
                 </div>
-                <div id={"secondWave"}>
-                    <p className={"ticketTitle"}>Regular release: wave 2</p>
-                    <p className={"ticketPrice"}>€ 7</p>
-                </div>
-                <div id={"thirdWave"}>
-                    <p className={"ticketTitle"}>Late night affair: wave 3</p>
-                    <p className={"ticketPrice"}>€ 8</p>
-                </div>
-                <img src={ContinuePayment} id={"continuePayment"}/>
             </div>
         </div>
     );

@@ -1,0 +1,54 @@
+#firstWave{
+    display: block;
+    width: 80%;
+    height: 65px;
+    background: transparent;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    border-radius: 12px;
+    border-width: 1px;
+}
+
+.ticketTitle{
+    margin-left: 4%;
+    margin-top: 0;
+}
+
+.ticketPrice{
+    margin-left: 4%;
+    font-weight: lighter;
+}
+
+#count{
+    margin-top: -6em;
+    float: right;
+    padding-right: 1em;
+    user-select: none;
+}
+
+#min{
+    display: inline-block;
+    font-size: 36px;
+    padding-right: 0.4em;
+    cursor: pointer;
+}
+
+#plus{
+    display: inline-block;
+    font-size: 36px;
+    padding-left: 0.4em;
+    cursor: pointer;
+}
+
+#numberBox{
+    display: inline-block;
+    width: 1em;
+    height: 1.5em;
+    background: transparent;
+    margin-top: 1em;
+    border-radius: 6px;
+    font-size: 2em;
+    text-align: center;
+}

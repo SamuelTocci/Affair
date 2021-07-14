@@ -1,0 +1,17 @@
+#total{
+    display: inline-block;
+}
+
+#feesText{
+    display: inline-block;
+    font-size: 70%;
+    font-weight: lighter;
+}
+
+#position{
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 22%;
+    padding-bottom: 2%;
+}
