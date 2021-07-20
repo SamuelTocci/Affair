@@ -82,7 +82,7 @@
 
 #ticketTotal{
     font-size: clamp(14px, 3.5vw, 32px);
-    padding-bottom: 2%;
+    padding-bottom: 4%;
 }
 
 #logoTypo{
@@ -91,3 +91,4 @@
     margin-right: auto;
     display: block;
 }
+
