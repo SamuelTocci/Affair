@@ -1,8 +1,17 @@
-.wrapper{
-    padding-left: 320px;
+.main{
     height: 100%;
     flex: 1 0 auto;
-    background: url("../res/GradientBackground.svg");
+    background-image: url("../res/BackgroundGrain.png");
+    background-repeat: repeat;
+    background-size: 100%;
+    padding-top: 10vmin;
+}
+
+.logo{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body{

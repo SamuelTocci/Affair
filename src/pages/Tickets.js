@@ -7,6 +7,7 @@ import Home from "./Home";
 import React from "react";
 import Wave from "../components/Wave";
 import TicketTotal from "../components/TicketTotal"
+import logoTypo from "../res/logoTypo.svg";
 
 function useWaveAmount () {
     const [total, setTotal] = useState(0);
@@ -28,6 +29,7 @@ function continuePayment() {
 const Tickets = () => {
     return (
         <div id={"ticketwrapper"}>
+            <img src={logoTypo} id={"logoTypo"}/>
             <div id={"main"}>
                 <img src={CheckoutProgress} id={"checkoutProgress"}/>
                 <Wave title={"Early birds: wave 1"} price={6}/>

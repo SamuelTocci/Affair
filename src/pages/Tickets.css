@@ -1,11 +1,11 @@
 #ticketwrapper{
-    margin-left: 240px;
     margin-right: 0;
     height: 100%;
     flex: 1 0 auto;
-    background: url("../res/GradientBackground.svg");
+    background: url("../res/BackgroundGrain.png");
+    background-size: 100vmin;
     padding-top: 1em;
-    padding-bottom: 14.8em;
+    padding-bottom: 10em;
 }
 
 #main{
@@ -18,7 +18,7 @@
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 #firstWave{
@@ -85,3 +85,9 @@
     padding-bottom: 2%;
 }
 
+#logoTypo{
+    width: 50vmin;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
