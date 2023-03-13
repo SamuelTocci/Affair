@@ -11,10 +11,14 @@ function Navbar() {
     return (
         <div className="Header">
             <header className="Navbar-header">
-                <img src={logospelled} className="logo-spelled"/>
+                <a href={"/"}>
+                    <img src={logospelled} className="logo-spelled"/>
+                </a>
             </header>
             <div className={"link_container"}>
-                <img src={logo} className="logo"/>
+                <a href={"/"}>
+                    <img src={logo} className="logo"/>
+                </a>
                 <div className={"Link-spacer"}>
                     <a href={"/vision"} className={"link"}>
                         <div className={"link-text"}> Vision </div>
