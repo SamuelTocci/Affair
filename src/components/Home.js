@@ -1,9 +1,17 @@
 import React from "react";
+import {Blogitemright, Blogitemleft} from "./Blog-item";
 
-class Home extends React.Component {
-    render() {
-        return <h1>Hello home</h1>;
-    }
+import Image1 from "../media/Image1-crowd.svg"
+import Image2 from "../media/Image2-helpinghand.svg"
+
+
+function Home() {
+        return (
+            <div className={"right-align"}>
+                <Blogitemright image={Image1}></Blogitemright>
+                <Blogitemleft image={Image2}></Blogitemleft>
+            </div>
+        );
 }
 
 export default Home

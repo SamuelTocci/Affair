@@ -7,6 +7,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #19C5B4;
+  user-select: none;
+}
+
+::selection{
+  color: pink;
+  background: white;
 }
 
 code {

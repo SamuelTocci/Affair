@@ -1,0 +1,28 @@
+.container-right{
+    margin-left: auto;
+    display: block;
+    width: 80%;
+}
+
+.container-left{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 80%;
+}
+
+.image{
+    max-height: 40vh;
+    margin-bottom: -17vh;
+}
+
+.text{
+    display: block;
+    margin-left: auto;
+    font-size: 1.4vh;
+    font-weight: normal;
+    text-align: left;
+    user-select: text;
+    max-width: 45%;
+    padding-right: 6vw;
+}
