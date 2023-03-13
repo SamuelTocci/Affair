@@ -5,10 +5,10 @@
 }
 
 .container-left{
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
+    margin-left: 10vw;
+    display: inline-flex;
     width: 80%;
+    margin-top: 10vh;
 }
 
 .image{
@@ -25,4 +25,18 @@
     user-select: text;
     max-width: 45%;
     padding-right: 6vw;
+}
+
+.image-no{
+    max-width: 50vw;
+    align-content: end;
+}
+
+.text-no{
+    max-width: 30vh;
+    margin-left: auto;
+    font-size: 1.4vh;
+    font-weight: normal;
+    text-align: left;
+    user-select: text;
 }
