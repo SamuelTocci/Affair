@@ -1,0 +1,49 @@
+.Header{
+    margin: auto;
+    text-align: center;
+}
+
+.logo-spelled {
+    padding-top: 1vh;
+    height: 10%;
+    max-width:65%;
+}
+
+.link_container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Link-spacer{
+    display: inline-block;
+    margin-right: 2vh;
+    margin-left: 2vh;
+    position: relative;
+}
+
+.link{
+    text-decoration: none;
+    color: #19C5B4;
+}
+.link-text{
+    font-size: 1.3vw;
+    position: relative;
+}
+
+.hover-icon{
+    position: relative;
+    left: 0%;
+    margin-top: -50%;
+    width: 8vw;
+    height: 8vw;
+    opacity: 0%;
+}
+
+.hover-icon:hover{
+    opacity: 100%;
+}
+
+.Navbar-header{
+
+}
