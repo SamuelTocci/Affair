@@ -1,51 +1,66 @@
-import logospelled from '../media/affair_spelled_2023.svg'
+import logospelled from '../media/affair logo zw.png'
 import logo from "../logo-small.svg"
-import vision_hover from '../media/Vision-hover.svg'
-import safer_hover from '../media/SaferSpaces-hover.svg'
-import architecture_hover from '../media/Architecture-hover.svg'
-import team_hover from '../media/Team-hover.svg'
+import vision_hover from '../media/TitlePapiertjes/Vision kleur.png'
+import safer_hover from '../media/TitlePapiertjes/Safer Spaces kleur.png'
+import architecture_hover from '../media/TitlePapiertjes/architecture-papier.png'
+import team_hover from '../media/TitlePapiertjes/Team kleur.png'
+import Draggable from "react-draggable";
 
 import './Navbar.css';
+import {useState} from "react";
 
 function Navbar() {
+    const [isDragging, setIsDragging] = useState(false);
+
+    const eventControl = (event: { type: any; }, info: any) => {
+
+
+        if (event.type === 'mousemove' || event.type === 'touchmove') {
+            setIsDragging(true)
+        }
+
+        if (event.type === 'mouseup' || event.type === 'touchend') {
+            setTimeout(() => {
+                setIsDragging(false);
+            }, 100);
+
+        }
+    }
     return (
         <div className="Header">
-            <header className="Navbar-header">
+            <header>
                 <a href={"/"}>
                     <img src={logospelled} className="logo-spelled"/>
                 </a>
-            </header>
-            <div className={"link_container"}>
-                <a href={"/"}>
-                    <img src={logo} className="logo"/>
+                <a href={"/architecture"} className="link" >
+                    <Draggable defaultPosition={{x: -250, y:0}} onDrag={eventControl}
+                               onStop={eventControl}>
+                        <img src={architecture_hover} className="papiertje"/>
+                    </Draggable>
                 </a>
-                <div className={"Link-spacer"}>
-                    <a href={"/vision"} className={"link"}>
-                        <div className={"link-text"}> Vision </div>
-                        <img src={vision_hover} className={"hover-icon"}/>
-                    </a>
-                </div>
-                <div className={"Link-spacer"}>
-                    <a href={"/saferspaces"} className={"link"}>
-                        <div className={"link-text"}> Safer Spaces </div>
-                        <img src={safer_hover} className={"hover-icon"}/>
-                    </a>
-                </div>
-                <div className={"Link-spacer"}>
-                    <a href={"/architecture"} className={"link"}>
-                        <div className={"link-text"}> Architecture </div>
-                        <img src={architecture_hover} className={"hover-icon"}/>
-                    </a>
-                </div>
-                <div className={"Link-spacer"}>
-                    <a href={"/team"} className={"link"}>
-                        <div className={"link-text"}> Team </div>
-                        <img src={team_hover} className={"hover-icon"}/>
-                    </a>
-                </div>
-            </div>
+                <a href={"/vision"} className="link" >
+                    <Draggable defaultPosition={{x: -150, y:35}} onDrag={eventControl}
+                               onStop={eventControl}>
+                        <img src={vision_hover} className="papiertje"/>
+                    </Draggable>
+                </a>
+                <a href={"/saferspaces"} className="link" >
+                    <Draggable defaultPosition={{x: -244, y:30}} onDrag={eventControl}
+                               onStop={eventControl}>
+                        <img src={safer_hover} className="papiertje"/>
+                    </Draggable>
+                </a>
+                <a href={"/team"} className="link" >
+                    <Draggable defaultPosition={{x: -138, y:-16}} onDrag={eventControl}
+                               onStop={eventControl}>
+                        <img src={team_hover} className="papiertje"/>
+                    </Draggable>
+                </a>
+            </header>
         </div>
     );
 }
+
+
 
 export default Navbar;

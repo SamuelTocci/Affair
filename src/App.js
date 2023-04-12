@@ -12,6 +12,9 @@ function App() {
                     <Routes>
                         <Route path='/' element={<Home/>} />
                         <Route path='/vision' element={<Vision/>} />
+                        <Route path='/architecture' element={<Vision/>} />
+                        <Route path='/saferspaces' element={<Vision/>} />
+                        <Route path='/team' element={<Vision/>} />
                     </Routes>
                 </div>
             </Router>

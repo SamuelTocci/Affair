@@ -1,8 +1,8 @@
 import React from "react";
 import {Blogitemright, Blogitemleft} from "./Blog-item";
 
-import Image1 from "../media/Image1-crowd.svg"
-import Image2 from "../media/Image2-helpinghand.svg"
+import Image1 from "../media/Images/_DSF1226.jpeg"
+import Image2 from "../media/Images/Laure R-5444-54440019.jpg"
 
 
 function Home() {
