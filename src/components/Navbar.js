@@ -8,35 +8,25 @@ import Draggable from "react-draggable";
 
 import './Navbar.css';
 import {useState} from "react";
+import {Link, useNavigate} from "react-router-dom";
 
 function Navbar() {
-    let archiPos = {x: -124, y:-43};
-    let visionPos = {x: -432, y:-52};
-    let saferPos = {x: -609, y:0};
-    let teamPos = {x: -648, y:2}
-    const eventControl = (event: { type: any; }, info: any, co: any) => {
+    let archiPos = {x: -226, y: 1};
+    let visionPos = {x: -102, y: 6};
+    let saferPos =  {x: -203, y: 29};
+    let teamPos =  {x: -93, y: 31};
+    const eventControl = (event: { type: any; }, info: any, nav: any) => {
 
         if (event.type === 'mousemove' || event.type === 'touchmove') {
 
         }
         if (event.type === 'mouseup' || event.type === 'touchend') {
-            //window.location.href = info;
-            console.log(archiPos)
-            if(info == "/scenography"){
-                archiPos = {x: -300, y: -60};
-            }
-            if(info == "/vision"){
-                visionPos = co;
-            }
-            if(info == "/saferspaces"){
-                saferPos = co;
-            }
-            if(info == "/team"){
-                teamPos = co;
-            }
+            // window.location.href = info;
 
         }
     }
+
+    const navigate = useNavigate();
 
     return (
         <div className="Header">
@@ -44,21 +34,17 @@ function Navbar() {
                 <a href={"/"}>
                     <img src={logospelled} className="logo-spelled"/>
                 </a>
-                <Draggable defaultPosition={archiPos} onDrag={eventControl}
-                           onStop={(event) => eventControl(event, "/scenography", {x: event.clientX, y: event.clientY})}>
+                <Draggable defaultPosition={archiPos}  onStop={(event) => eventControl(event, "/scenography", navigate("/scenography"))}>
                     <img src={architecture_hover} className="papiertje"/>
                 </Draggable>
-                <Draggable defaultPosition={visionPos} onDrag={eventControl}
-                           onStop={(event) => eventControl(event, "/vision", {x: event.clientX, y: event.clientY})}>
+                <Draggable defaultPosition={visionPos}   onStop={(event) => eventControl(event, "/vision", navigate("/vision"))}>
                     <img src={vision_hover} className="papiertje"/>
                 </Draggable>
-                <Draggable defaultPosition={saferPos} onDrag={eventControl}
-                           onStop={(event) => eventControl(event, "/saferspaces", {x: event.clientX, y: event.clientY})}>
+                <Draggable defaultPosition={saferPos} onStop={(event) => eventControl(event, "/saferspaces", navigate("/saferspaces"))}>
                     <img src={safer_hover} className="papiertje"/>
                 </Draggable>
 
-                <Draggable defaultPosition={teamPos} onDrag={eventControl}
-                           onStop={(event) => eventControl(event, "/team", {x: event.clientX, y: event.clientY})}>
+                <Draggable defaultPosition={teamPos}  onStop={(event) => eventControl(event, "/team", navigate("/team"))}>
                     <img src={team_hover} className="papiertje"/>
                 </Draggable>
             </header>

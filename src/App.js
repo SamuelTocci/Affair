@@ -7,10 +7,12 @@ import Vision from "./components/Vision";
 import Scenography from "./components/Scenography";
 import SaferSpaces from "./components/SaferSpaces";
 import Team from "./components/Team";
+import Navbar from "./components/Navbar";
 
 function App() {
         return (
             <Router>
+                <Navbar/>
                 <div>
                     <Routes>
                         <Route path='/' element={<Home/>} />
