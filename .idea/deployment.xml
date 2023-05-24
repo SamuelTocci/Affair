@@ -6,7 +6,8 @@
       <paths name="WICE">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/public_html/static" local="$PROJECT_DIR$/build/static" web="/" />
+            <mapping deploy="/public_html" local="$PROJECT_DIR$/build" web="/" />
           </mappings>
         </serverdata>
       </paths>

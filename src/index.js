@@ -5,12 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from "./components/Navbar";
 import { BrowserRouter } from 'react-router-dom'
+import './components/Team.css'
+
+import ImageLekke from "./media/Images/lekke.png"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
       <Navbar/>
       <App/>
+      <img className={"image-header"} src={ImageLekke}/>
   </div>
 );
 

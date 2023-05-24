@@ -2,11 +2,13 @@
     margin: auto;
     text-align: left;
     margin-bottom: 2vh;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .papiertje{
     min-height: 2vh;
     max-height: 7vh;
+    cursor: grab;
 }
 
 .link{

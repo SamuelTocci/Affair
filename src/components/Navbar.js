@@ -10,52 +10,57 @@ import './Navbar.css';
 import {useState} from "react";
 
 function Navbar() {
-    const [isDragging, setIsDragging] = useState(false);
-
-    const eventControl = (event: { type: any; }, info: any) => {
-
+    let archiPos = {x: -124, y:-43};
+    let visionPos = {x: -432, y:-52};
+    let saferPos = {x: -609, y:0};
+    let teamPos = {x: -648, y:2}
+    const eventControl = (event: { type: any; }, info: any, co: any) => {
 
         if (event.type === 'mousemove' || event.type === 'touchmove') {
-            setIsDragging(true)
-        }
 
+        }
         if (event.type === 'mouseup' || event.type === 'touchend') {
-            setTimeout(() => {
-                setIsDragging(false);
-            }, 100);
+            //window.location.href = info;
+            console.log(archiPos)
+            if(info == "/scenography"){
+                archiPos = {x: -300, y: -60};
+            }
+            if(info == "/vision"){
+                visionPos = co;
+            }
+            if(info == "/saferspaces"){
+                saferPos = co;
+            }
+            if(info == "/team"){
+                teamPos = co;
+            }
 
         }
     }
+
     return (
         <div className="Header">
             <header>
                 <a href={"/"}>
                     <img src={logospelled} className="logo-spelled"/>
                 </a>
-                <a href={"/architecture"} className="link" >
-                    <Draggable defaultPosition={{x: -250, y:0}} onDrag={eventControl}
-                               onStop={eventControl}>
-                        <img src={architecture_hover} className="papiertje"/>
-                    </Draggable>
-                </a>
-                <a href={"/vision"} className="link" >
-                    <Draggable defaultPosition={{x: -150, y:35}} onDrag={eventControl}
-                               onStop={eventControl}>
-                        <img src={vision_hover} className="papiertje"/>
-                    </Draggable>
-                </a>
-                <a href={"/saferspaces"} className="link" >
-                    <Draggable defaultPosition={{x: -244, y:30}} onDrag={eventControl}
-                               onStop={eventControl}>
-                        <img src={safer_hover} className="papiertje"/>
-                    </Draggable>
-                </a>
-                <a href={"/team"} className="link" >
-                    <Draggable defaultPosition={{x: -138, y:-16}} onDrag={eventControl}
-                               onStop={eventControl}>
-                        <img src={team_hover} className="papiertje"/>
-                    </Draggable>
-                </a>
+                <Draggable defaultPosition={archiPos} onDrag={eventControl}
+                           onStop={(event) => eventControl(event, "/scenography", {x: event.clientX, y: event.clientY})}>
+                    <img src={architecture_hover} className="papiertje"/>
+                </Draggable>
+                <Draggable defaultPosition={visionPos} onDrag={eventControl}
+                           onStop={(event) => eventControl(event, "/vision", {x: event.clientX, y: event.clientY})}>
+                    <img src={vision_hover} className="papiertje"/>
+                </Draggable>
+                <Draggable defaultPosition={saferPos} onDrag={eventControl}
+                           onStop={(event) => eventControl(event, "/saferspaces", {x: event.clientX, y: event.clientY})}>
+                    <img src={safer_hover} className="papiertje"/>
+                </Draggable>
+
+                <Draggable defaultPosition={teamPos} onDrag={eventControl}
+                           onStop={(event) => eventControl(event, "/team", {x: event.clientX, y: event.clientY})}>
+                    <img src={team_hover} className="papiertje"/>
+                </Draggable>
             </header>
         </div>
     );
